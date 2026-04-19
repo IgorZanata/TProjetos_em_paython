@@ -1,0 +1,11 @@
+from anytree import Node
+raiz = Node(100)
+nivel_1_filho_1 = Node(42, parent=raiz)
+nivel_1_filho_2 = Node(51, parent=raiz)
+nivel_2_filho_1 = Node(28, parent=nivel_1_filho_1)
+nivel_2_filho_2 = Node(81, parent=nivel_1_filho_1)
+nivel_2_filho_3 = Node(27, parent=nivel_1_filho_1)
+nivel_2_filho_4 = Node(63, parent=nivel_1_filho_2)
+nivel_3_filho_1 = Node(10, parent=nivel_2_filho_2)
+nivel_3_filho_2 = Node(13, parent=nivel_2_filho_4)
+nivel_3_filho_3 = Node(73, parent=nivel_2_filho_4)
